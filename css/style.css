@@ -1,0 +1,156 @@
+@import url(normalize.css);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans&display=swap);
+.load-bar {
+  width: 0%;
+  height: 5px;
+  background-color: #223;
+  position: relative;
+}
+.none {
+  display: none;
+}
+.body-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-color: #111;
+}
+.header-container {
+  text-align: center;
+}
+.header-title {
+  font-family: "PT Sans", sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.navbar {
+  background-color: #222;
+  padding: 10px 0;
+}
+.navbar-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+.navbar-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.navbar-item:hover {
+  background-color: #333;
+}
+.main {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.birthday,
+.girlfriend,
+.index {
+  font-family: "PT Sans", sans-serif;
+  font-size: 28px;
+}
+.birthday {
+  font-size: 20px;
+}
+.girlfriend {
+  font-size: 20px;
+}
+.item {
+  font-size: 20px;
+  margin-top: 15px;
+}
+.footer-container {
+  margin-top: auto;
+  text-align: center;
+}
+.footer-item {
+  font-style: italic;
+  font-size: 15px;
+  color: #666;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+@media screen and (min-width: 760px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .navbar {
+    background-color: #111;
+  }
+  .navbar-item {
+    margin: 0 5px;
+  }
+  .birthday,
+  .girlfriend,
+  .index {
+    font-size: 30px;
+  }
+  .birthday {
+    font-size: 24px;
+  }
+  .girlfriend {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header-title {
+    font-size: 38px;
+  }
+  .navbar-item {
+    margin: 0 30px;
+  }
+  .birthday,
+  .girlfriend,
+  .index {
+    font-size: 34px;
+  }
+  .birthday {
+    font-size: 28px;
+  }
+  .girlfriend {
+    font-size: 28px;
+  }
+}
